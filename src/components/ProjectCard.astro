@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+type Props = {
+    project: CollectionEntry<"projects">;
+};
+
+const { project } = Astro.props;
+const { title } = project.data;
+---
+
+<a href={project.slug}>
+    <Image src={project.data.cover} height="1200" alt={project.data.alt} class="object-cover aspect-[1200/800]" />
+    <h2>{title}</h2>
+</a>

@@ -1,15 +1,17 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import ProjectCard from "../components/ProjectCard.astro";
+
+const pageTitle = "Home";
+
+const projects = await getCollection("projects");
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
-    <title>Portfolio 2024</title>
-  </head>
-  <body>
-    <h1>Portfolio 2024</h1>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+  <h2>My awesome blog subtitle</h2>
+
+  <section class="grid sm:grid-cols-2 gap-4">
+    {projects.map((p) => <ProjectCard project={p} />)}
+  </section>
+</BaseLayout>
