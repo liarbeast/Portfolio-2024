@@ -1,17 +1,18 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
-import ProjectCard from "../components/ProjectCard.astro";
+import BaseLayout from '../layouts/BaseLayout.astro'
+import { getCollection } from 'astro:content'
+import ProjectCard from '../components/ProjectCard.astro'
 
-const pageTitle = "Home";
+const pageTitle = 'Home'
 
-const projects = await getCollection("projects");
+const projects = await getCollection('projects')
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+	<h2>My awesome blog subtitle</h2>
 
-  <section class="grid sm:grid-cols-2 gap-4">
-    {projects.map((p) => <ProjectCard project={p} />)}
-  </section>
+	<!-- Portfolio projects grid -->
+	<section class="grid gap-6 sm:grid-cols-2">
+		{projects.map((p) => <ProjectCard project={p} />)}
+	</section>
 </BaseLayout>
