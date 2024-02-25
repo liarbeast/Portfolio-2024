@@ -8,7 +8,11 @@ export default {
 			  },
 			  transitionProperty: {
 				'spacing': 'margin, padding',
-			  }
+			  },
+			fontFamily: {
+				'instrument': ["Instrument Serif"],
+				'manrope': ["Manrope"],
+			}
 		},
 	},
 	plugins: [

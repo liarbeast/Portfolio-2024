@@ -9,10 +9,15 @@ const projects = await getCollection('projects')
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>My awesome blog subtitle</h2>
-
+	<h2 class="pt-8 text-5xl">
+		Lorem wipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis velit non semper
+		sagittis.
+	</h2>
+	<h3 class="pt-4 text-xl">
+		Currently at <a href="https://maersk.com/">Maersk</a>.
+	</h3>
 	<!-- Portfolio projects grid -->
-	<section class="grid gap-6 sm:grid-cols-2">
+	<section class="grid gap-6 pt-16 sm:grid-cols-2">
 		{projects.map((p) => <ProjectCard project={p} />)}
 	</section>
 </BaseLayout>
