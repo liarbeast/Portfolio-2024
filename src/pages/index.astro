@@ -1,34 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { getCollection } from 'astro:content'
-import ProjectCard from '../components/ProjectCard.astro'
 
 const pageTitle = 'Home'
-
-const projects = await getCollection('projects')
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<div class="pb-12 md:pb-16 md:pt-8 lg:w-5/6 lg:pb-24 lg:pt-12 xl:w-4/6">
-		<h2 class="text-4xl md:text-6xl">
-			Hello! I'm Lars, a UI designer from Rotterdam, Netherlands.
-		</h2>
+	<div class="mx-auto pb-12 text-center md:pb-16 md:pt-8 lg:w-5/6 lg:pb-24 lg:pt-12 xl:w-4/6">
+		<h2 class="text-4xl transition-all duration-500 ease-out md:text-6xl">Nothing to see here!</h2>
 		<div class="text-md pt-8 font-normal">
-			<p>
-				Ever curious designer with <span class="italic">just</span> shy of 10 years design experience.
-				Passionate about learning, design systems, data driven design, accessibility, and more.
-			</p>
-			<p>
-				Currently improving the landside experience for our users at <a
-					href="https://maersk.com/"
-					class="decoration-3 font-bold underline decoration-pink-500 underline-offset-2 opacity-100"
-					>Maersk</a
-				>.
-			</p>
+			<p>Yet...</p>
 		</div>
 	</div>
-	<!-- Portfolio projects grid -->
-	<section class="grid gap-6 sm:grid-cols-2">
-		{projects.map((p) => <ProjectCard project={p} />)}
-	</section>
 </BaseLayout>
