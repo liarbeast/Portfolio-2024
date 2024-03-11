@@ -1,16 +1,14 @@
 ---
 import '../styles/global.css'
 import Navigation from '../components/Navigation.astro'
-import Footer from '../components/Footer.astro'
 import Head from '../components/Head.astro'
 const { pageTitle } = Astro.props
 ---
 
 <html lang="en">
 	<Head pageTitle={pageTitle} />
-	<body class="mx-auto px-6 py-10 lg:px-10 xl:px-24">
+	<body class="mx-auto px-5 py-10 lg:px-10 xl:px-20">
 		<Navigation />
 		<slot />
-		<Footer />
 	</body>
 </html>
