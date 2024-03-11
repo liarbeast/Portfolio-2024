@@ -8,7 +8,6 @@ import mdx from '@astrojs/mdx'
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind({}), mdx()],
-	site: 'https://liarbeast.github.io'
 })
 =======
 import { defineConfig } from 'astro/config';
