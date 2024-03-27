@@ -9,6 +9,7 @@ const projects = await getCollection('projects')
 ---
 
 <BaseLayout pageTitle={pageTitle}>
+<<<<<<< HEAD
 	<div class="pb-12 md:pb-16 md:pt-8 lg:w-5/6 lg:pb-24 lg:pt-12 xl:w-4/6">
 		<h2 class="text-4xl md:text-6xl">I'm Lars, a UI designer from Rotterdam, Netherlands.</h2>
 		<div class="text-md pt-8 font-normal">
@@ -27,6 +28,17 @@ const projects = await getCollection('projects')
 	</div>
 	<!-- Portfolio projects grid -->
 	<section class="grid gap-6 md:grid-cols-2 lg:gap-8">
+=======
+	<h2 class="pt-12 text-5xl">
+		Lorem wipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis velit non semper
+		sagittis.
+	</h2>
+	<h3 class="pt-4 text-xl">
+		Currently at <a href="https://maersk.com/" class="italic">Maersk</a>.
+	</h3>
+	<!-- Portfolio projects grid -->
+	<section class="grid gap-6 pt-16 sm:grid-cols-2">
+>>>>>>> c384dd813009e09487aca4eff15e52f5ef877ef9
 		{projects.map((p) => <ProjectCard project={p} />)}
 	</section>
 </BaseLayout>

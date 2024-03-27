@@ -4,19 +4,19 @@ export default {
 	theme: {
 		extend: {
 			transitionTimingFunction: {
-				'out-back': 'cubic-bezier(0.34, 1.56, 0.64, 1)'
-			},
-			fontSize: {
-				xxs: '0.625rem'
-			},
-			transitionProperty: {
-				spacing: 'margin, padding'
-			},
+				'out-back': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+			  },
+			  transitionProperty: {
+				'spacing': 'margin, padding',
+			  },
 			fontFamily: {
-				instrument: ['Instrument Serif'],
-				manrope: ['Manrope']
+				'instrument': ["Instrument Serif"],
+				'manrope': ["Manrope"],
 			}
-		}
+		},
 	},
-	plugins: [require('@tailwindcss/typography')]
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 }
+

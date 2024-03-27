@@ -1,10 +1,19 @@
 ---
-title: 'Maersk'
+title: 'TUI'
 pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
-summary: 'Brand transition'
 author: 'Astro Learner'
-cover: './image-1.png'
+cover: './cover.jpg'
 alt: 'The full Astro logo.'
 tags: ['astro', 'blogging', 'learning in public']
 ---
+
+![](inline.jpg)
+
+qweqwe
+
+![](inline.jpg)
+
+qwewq
+
+![](inline.jpg)
