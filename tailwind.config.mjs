@@ -13,8 +13,8 @@ export default {
 				spacing: 'margin, padding'
 			},
 			fontFamily: {
-				instrument: ['Instrument Serif'],
-				manrope: ['Manrope']
+				manrope: ['Manrope'],
+				polysans: ['PolySans']
 			}
 		}
 	},
