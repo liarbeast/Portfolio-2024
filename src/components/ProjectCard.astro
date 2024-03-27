@@ -1,21 +1,34 @@
 ---
 import type { CollectionEntry } from 'astro:content'
 import { Image } from 'astro:assets'
+import ProjectChip from '../components/ProjectChip.astro'
 
 type Props = {
 	project: CollectionEntry<'projects'>
 }
 
 const { project } = Astro.props
-const { title, summary } = project.data
+const { title, summary, tags } = project.data
 ---
 
 <a href={project.slug}>
-	<Image
-		src={project.data.cover}
-		height="1200"
-		alt={project.data.alt}
-		class="aspect-[4/3] rounded-2xl object-cover transition-all duration-500 ease-out hover:scale-[1.01] md:rounded-3xl lg:aspect-[5/4]"
-	/>
+	<div class="group relative">
+		<Image
+			src={project.data.cover}
+			height="1200"
+			alt={project.data.alt}
+			class="aspect-[4/3] rounded-2xl object-cover group-hover:scale-[1.01] md:rounded-3xl lg:aspect-[5/4]"
+		/>
+
+		<div class="absolute bottom-0 left-4 opacity-0 group-hover:bottom-2 group-hover:opacity-100">
+			{
+				tags.map((tags) => (
+					<ProjectChip>
+						<div slot="tag">{tags}</div>
+					</ProjectChip>
+				))
+			}
+		</div>
+	</div>
 	<h3 class="text-md pt-2 font-medium">{title} — {summary}</h3>
 </a>

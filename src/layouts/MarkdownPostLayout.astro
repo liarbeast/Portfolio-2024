@@ -11,10 +11,10 @@ const { frontmatter } = Astro.props
 			<h1 class="text-2xl opacity-65">{frontmatter.title}</h1>
 			<h2 class="pb-4 pt-2 text-5xl">{frontmatter.description}</h2>
 
-			<div class="">
+			<div>
 				{
 					frontmatter.tags.map((tag) => (
-						<ProjectChip>
+						<ProjectChip variant="red">
 							<div slot="tag">{tag}</div>
 						</ProjectChip>
 					))

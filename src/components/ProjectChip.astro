@@ -1,7 +1,9 @@
 ---
-
+const { variant } = Astro.props
 ---
 
-<div class="mb-2 mr-2 inline-block rounded bg-gray-200 px-2 py-1">
+<div
+	class={`mb-2 mr-2 inline-block rounded px-2 py-1 ${variant === 'red' ? 'bg-red-500' : 'bg-blue-500'}`}
+>
 	<slot name="tag" />
 </div>

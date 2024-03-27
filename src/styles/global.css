@@ -7,7 +7,7 @@
         @apply bg-stone-100 dark:bg-zinc-900  text-zinc-700 dark:text-zinc-300 font-polysans;
     }
 
-    body > * {
+* {
         @apply transition-all duration-500 ease-out;
     }
 
