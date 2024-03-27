@@ -5,11 +5,22 @@ import { getCollection } from 'astro:content'
 const pageTitle = 'Home'
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	<div class="mx-auto pb-12 text-center md:pb-16 md:pt-8 lg:w-5/6 lg:pb-24 lg:pt-12 xl:w-4/6">
-		<h2 class="text-3xl transition-all duration-500 ease-out md:text-6xl">Check back soon!</h2>
-		<div class="text-md pt-8 font-normal">
-			<p>:)</p>
+<body class="flex h-screen w-screen flex-row flex-wrap content-center justify-center">
+	<div style="width: 300px">
+		<script
+			src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+			type="module"></script><dotlottie-player
+			src="https://lottie.host/770a80eb-3097-481f-b378-15155e9b5b37/jOk44P7Chx.json"
+			background="transparent"
+			speed="1"
+			style="width: 300px; height: 300px"
+			direction="1"
+			playMode="normal"
+			loop
+			autoplay></dotlottie-player>
+		<h2 class="text-2xl transition-all duration-500 ease-out">Nothing to see here... Yet</h2>
+		<div class="text-md pt-1 font-normal">
+			<p>I'm still hard at work on my portfolio.</p>
 		</div>
 	</div>
-</BaseLayout>
+</body>
