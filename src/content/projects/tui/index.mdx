@@ -4,27 +4,40 @@ pubDate: 2022-07-01
 description: 'This is the first post of my new Astro blog.'
 author: 'Astro Learner'
 cover: './cover.jpg'
+summary: 'Interactive campaign'
 alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-import Paragraph from '../../../components/Paragraph.astro';
+import ProjectParagraph from '../../../components/ProjectParagraph.astro';
+import ProjectSidebyside from '../../../components/ProjectSidebyside.astro';
 
+![Test](./inline.jpg)
 
-<Paragraph>
+<ProjectParagraph>
 <div slot="left">A headline will come here</ div>
 <div slot="right">
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 </div>
-</Paragraph>
+</ProjectParagraph>
 
 ![Test](./inline.jpg)
 
 
-<Paragraph>
-<div slot="left">A headline will come here</ div>
+<ProjectParagraph>
+<div slot="left">A headline will come here </ div>
 <div slot="right">
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 </div>
-</Paragraph>
+</ProjectParagraph>
+
+
+<ProjectSidebyside>
+<div slot="left">  
+![Test](./inline.jpg)
+</ div>
+<div slot="right">
+![Test](./inline.jpg)
+</div>
+</ProjectSidebyside>

@@ -7,7 +7,7 @@ type Props = {
 }
 
 const { project } = Astro.props
-const { title } = project.data
+const { title, summary } = project.data
 ---
 
 <a href={project.slug}>
@@ -15,7 +15,7 @@ const { title } = project.data
 		src={project.data.cover}
 		height="1200"
 		alt={project.data.alt}
-		class="aspect-[1200/800] rounded-2xl object-cover transition-all duration-500 ease-out hover:scale-[1.01] md:rounded-3xl"
+		class="aspect-[4/3] rounded-2xl object-cover transition-all duration-500 ease-out hover:scale-[1.01] md:rounded-3xl lg:aspect-[5/4]"
 	/>
-	<h3 class="text-md pt-2 font-manrope font-medium">{title}</h3>
+	<h3 class="text-md pt-2 font-manrope font-medium">{title} — {summary}</h3>
 </a>
