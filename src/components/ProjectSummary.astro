@@ -1,0 +1,31 @@
+---
+
+---
+
+<section
+	class="my-16 flex flex-col rounded-3xl border border-zinc-300 px-4 py-4 text-zinc-900 md:px-8 md:py-4 lg:px-12 lg:py-8 dark:border-zinc-700 dark:text-zinc-100"
+>
+	<h3 class="text-3xl font-semibold">Project summary</h3>
+
+	<div class="mt-4 flex flex-col justify-between gap-2 md:flex-row md:gap-8">
+		<div class="basis-2/4 pt-4 md:border-t dark:border-zinc-700">
+			<h4 class="text-zinc-500 dark:text-zinc-400">Objective</h4>
+			<slot name="summary" />
+		</div>
+
+		<div class="flex basis-1/4 flex-col gap-2 pt-4 md:border-t dark:border-zinc-700">
+			<div>
+				<h4 class="text-zinc-500 dark:text-zinc-400">Industry</h4>
+				<slot name="industry" />
+			</div>
+			<div>
+				<h4 class="text-zinc-500 dark:text-zinc-400">Main stakeholders</h4>
+				<slot name="stakeholders" />
+			</div>
+		</div>
+		<div class="basis-1/4 pt-4 md:border-t dark:border-zinc-700">
+			<h4 class="text-zinc-500 dark:text-zinc-400">Deliverables</h4>
+			<slot name="deliverables" />
+		</div>
+	</div>
+</section>

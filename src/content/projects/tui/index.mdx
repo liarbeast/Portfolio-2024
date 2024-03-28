@@ -8,6 +8,17 @@ tags: ["UX/UI Design", "Stakeholder management", "Strategy", "Prototyping", "Bra
 ---
 import ProjectParagraph from '../../../components/ProjectParagraph.astro';
 import ProjectSidebyside from '../../../components/ProjectSidebyside.astro';
+import ProjectSummary from '../../../components/ProjectSummary.astro';
+
+
+![Test](./inline.jpg)
+
+<ProjectSummary>
+<div slot="summary">summary goes here</div>
+<div slot="stakeholders">stakeholders comes here</div>
+<div slot="deliverables">deliverables comes here</div>
+<div slot="industry">industry comes here</div>
+</ProjectSummary>
 
 ![Test](./inline.jpg)
 
@@ -21,7 +32,6 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 ![Test](./inline.jpg)
 
-
 <ProjectParagraph>
 <div slot="left">A headline will come here </ div>
 <div slot="right">
@@ -29,7 +39,6 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
 </div>
 </ProjectParagraph>
-
 
 <ProjectSidebyside>
 <div slot="left">  
@@ -39,3 +48,5 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 ![Test](./inline.jpg)
 </div>
 </ProjectSidebyside>
+
+
