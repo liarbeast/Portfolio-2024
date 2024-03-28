@@ -23,7 +23,7 @@ const { title, summary, tags } = project.data
 		<div class="absolute bottom-0 left-4 opacity-0 group-hover:bottom-2 group-hover:opacity-100">
 			{
 				tags.map((tags) => (
-					<ProjectChip>
+					<ProjectChip variant="on-image">
 						<div slot="tag">{tags}</div>
 					</ProjectChip>
 				))

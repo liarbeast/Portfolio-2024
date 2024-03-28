@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        @apply bg-stone-100 dark:bg-zinc-900  text-zinc-700 dark:text-zinc-300 font-polysans;
+        @apply bg-stone-100 dark:bg-zinc-900  text-zinc-600 dark:text-zinc-300 font-polysans;
     }
 
 * {
